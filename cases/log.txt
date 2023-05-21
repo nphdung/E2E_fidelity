@@ -1,0 +1,411 @@
+\* Maximize_the_number_of_met_requests *\
+Maximize
+OBJ: Indicator_(0,_0) + Indicator_(0,_1) + Indicator_(0,_10)
+ + Indicator_(0,_2) + Indicator_(0,_3) + Indicator_(0,_4) + Indicator_(0,_5)
+ + Indicator_(0,_6) + Indicator_(0,_7) + Indicator_(0,_8) + Indicator_(0,_9)
+ + Indicator_(1,_0) + Indicator_(1,_1) + Indicator_(1,_2) + Indicator_(1,_3)
+ + Indicator_(1,_4) + Indicator_(10,_0) + Indicator_(10,_1)
+ + Indicator_(10,_2) + Indicator_(10,_3) + Indicator_(10,_4)
+ + Indicator_(10,_5) + Indicator_(10,_6) + Indicator_(10,_7)
+ + Indicator_(11,_0) + Indicator_(11,_1) + Indicator_(11,_2)
+ + Indicator_(11,_3) + Indicator_(11,_4) + Indicator_(11,_5)
+ + Indicator_(12,_0) + Indicator_(12,_1) + Indicator_(12,_2)
+ + Indicator_(12,_3) + Indicator_(12,_4) + Indicator_(12,_5)
+ + Indicator_(12,_6) + Indicator_(12,_7) + Indicator_(12,_8)
+ + Indicator_(12,_9) + Indicator_(13,_0) + Indicator_(13,_1)
+ + Indicator_(13,_10) + Indicator_(13,_11) + Indicator_(13,_12)
+ + Indicator_(13,_13) + Indicator_(13,_14) + Indicator_(13,_2)
+ + Indicator_(13,_3) + Indicator_(13,_4) + Indicator_(13,_5)
+ + Indicator_(13,_6) + Indicator_(13,_7) + Indicator_(13,_8)
+ + Indicator_(13,_9) + Indicator_(2,_0) + Indicator_(2,_1) + Indicator_(2,_2)
+ + Indicator_(2,_3) + Indicator_(2,_4) + Indicator_(2,_5) + Indicator_(3,_0)
+ + Indicator_(3,_1) + Indicator_(3,_10) + Indicator_(3,_2) + Indicator_(3,_3)
+ + Indicator_(3,_4) + Indicator_(3,_5) + Indicator_(3,_6) + Indicator_(3,_7)
+ + Indicator_(3,_8) + Indicator_(3,_9) + Indicator_(4,_0) + Indicator_(4,_1)
+ + Indicator_(4,_2) + Indicator_(4,_3) + Indicator_(4,_4) + Indicator_(4,_5)
+ + Indicator_(5,_0) + Indicator_(5,_1) + Indicator_(5,_2) + Indicator_(5,_3)
+ + Indicator_(5,_4) + Indicator_(5,_5) + Indicator_(6,_0) + Indicator_(6,_1)
+ + Indicator_(6,_2) + Indicator_(6,_3) + Indicator_(6,_4) + Indicator_(6,_5)
+ + Indicator_(6,_6) + Indicator_(7,_0) + Indicator_(7,_1) + Indicator_(7,_2)
+ + Indicator_(7,_3) + Indicator_(7,_4) + Indicator_(7,_5) + Indicator_(7,_6)
+ + Indicator_(7,_7) + Indicator_(8,_0) + Indicator_(8,_1) + Indicator_(8,_2)
+ + Indicator_(8,_3) + Indicator_(8,_4) + Indicator_(8,_5) + Indicator_(8,_6)
+ + Indicator_(8,_7) + Indicator_(9,_0) + Indicator_(9,_1) + Indicator_(9,_2)
+ + Indicator_(9,_3) + Indicator_(9,_4) + Indicator_(9,_5) + Indicator_(9,_6)
+ + Indicator_(9,_7) + Indicator_(9,_8) + Indicator_(9,_9)
+Subject To
+_C1: Indicator_(11,_0) + 2 Indicator_(11,_1) + 2 Indicator_(11,_2)
+ + 2 Indicator_(11,_3) <= 4
+_C10: 2 Indicator_(1,_2) + 2 Indicator_(9,_3) + 3 Indicator_(9,_4)
+ + 2 Indicator_(9,_5) + 2 Indicator_(9,_6) + 2 Indicator_(9,_7)
+ + 2 Indicator_(9,_8) + 2 Indicator_(9,_9) <= 5
+_C100: 2 Indicator_(7,_6) + 2 Indicator_(7,_7) <= 1
+_C101: Indicator_(6,_0) + Indicator_(6,_1) + Indicator_(6,_2)
+ + 2 Indicator_(6,_3) + Indicator_(6,_4) <= 5
+_C102: Indicator_(6,_0) + Indicator_(6,_1) + 2 Indicator_(6,_2)
+ + Indicator_(6,_3) + Indicator_(6,_4) <= 4
+_C103: 2 Indicator_(0,_10) + 2 Indicator_(0,_7) + 2 Indicator_(0,_8)
+ + 3 Indicator_(0,_9) + 2 Indicator_(3,_10) + 2 Indicator_(3,_7)
+ + 3 Indicator_(3,_8) + 2 Indicator_(3,_9) <= 1
+_C104: Indicator_(3,_2) + Indicator_(3,_3) + 2 Indicator_(3,_4)
+ + Indicator_(3,_5) + Indicator_(3,_6) <= 1
+_C105: 2 Indicator_(11,_4) + 2 Indicator_(11,_5) <= 4
+_C106: 2 Indicator_(4,_0) <= 1
+_C107: 2 Indicator_(6,_0) + 3 Indicator_(6,_1) + 2 Indicator_(6,_2)
+ + 2 Indicator_(6,_3) + 2 Indicator_(6,_4) <= 1
+_C108: 2 Indicator_(3,_2) + 2 Indicator_(3,_3) + 2 Indicator_(3,_4)
+ + 3 Indicator_(3,_5) + 2 Indicator_(3,_6) <= 3
+_C109: Indicator_(0,_0) + Indicator_(0,_1) + Indicator_(0,_10)
+ + Indicator_(0,_2) + Indicator_(0,_3) + Indicator_(0,_4) + Indicator_(0,_5)
+ + Indicator_(0,_6) + Indicator_(0,_7) + Indicator_(0,_8) + Indicator_(0,_9)
+ <= 1
+_C11: 2 Indicator_(1,_3) + Indicator_(1,_4) <= 2
+_C110: Indicator_(1,_0) + Indicator_(1,_1) + Indicator_(1,_2)
+ + Indicator_(1,_3) + Indicator_(1,_4) <= 1
+_C111: Indicator_(2,_0) + Indicator_(2,_1) + Indicator_(2,_2)
+ + Indicator_(2,_3) + Indicator_(2,_4) + Indicator_(2,_5) <= 1
+_C112: Indicator_(3,_0) + Indicator_(3,_1) + Indicator_(3,_10)
+ + Indicator_(3,_2) + Indicator_(3,_3) + Indicator_(3,_4) + Indicator_(3,_5)
+ + Indicator_(3,_6) + Indicator_(3,_7) + Indicator_(3,_8) + Indicator_(3,_9)
+ <= 1
+_C113: Indicator_(4,_0) + Indicator_(4,_1) + Indicator_(4,_2)
+ + Indicator_(4,_3) + Indicator_(4,_4) + Indicator_(4,_5) <= 1
+_C114: Indicator_(5,_0) + Indicator_(5,_1) + Indicator_(5,_2)
+ + Indicator_(5,_3) + Indicator_(5,_4) + Indicator_(5,_5) <= 1
+_C115: Indicator_(6,_0) + Indicator_(6,_1) + Indicator_(6,_2)
+ + Indicator_(6,_3) + Indicator_(6,_4) + Indicator_(6,_5) + Indicator_(6,_6)
+ <= 1
+_C116: Indicator_(7,_0) + Indicator_(7,_1) + Indicator_(7,_2)
+ + Indicator_(7,_3) + Indicator_(7,_4) + Indicator_(7,_5) + Indicator_(7,_6)
+ + Indicator_(7,_7) <= 1
+_C117: Indicator_(8,_0) + Indicator_(8,_1) + Indicator_(8,_2)
+ + Indicator_(8,_3) + Indicator_(8,_4) + Indicator_(8,_5) + Indicator_(8,_6)
+ + Indicator_(8,_7) <= 1
+_C118: Indicator_(9,_0) + Indicator_(9,_1) + Indicator_(9,_2)
+ + Indicator_(9,_3) + Indicator_(9,_4) + Indicator_(9,_5) + Indicator_(9,_6)
+ + Indicator_(9,_7) + Indicator_(9,_8) + Indicator_(9,_9) <= 1
+_C119: Indicator_(10,_0) + Indicator_(10,_1) + Indicator_(10,_2)
+ + Indicator_(10,_3) + Indicator_(10,_4) + Indicator_(10,_5)
+ + Indicator_(10,_6) + Indicator_(10,_7) <= 1
+_C12: 2 Indicator_(1,_0) + Indicator_(1,_1) + 2 Indicator_(9,_3)
+ + 2 Indicator_(9,_4) + 3 Indicator_(9,_5) + 2 Indicator_(9,_6)
+ + 2 Indicator_(9,_7) + 2 Indicator_(9,_8) + 2 Indicator_(9,_9) <= 3
+_C120: Indicator_(11,_0) + Indicator_(11,_1) + Indicator_(11,_2)
+ + Indicator_(11,_3) + Indicator_(11,_4) + Indicator_(11,_5) <= 1
+_C121: Indicator_(12,_0) + Indicator_(12,_1) + Indicator_(12,_2)
+ + Indicator_(12,_3) + Indicator_(12,_4) + Indicator_(12,_5)
+ + Indicator_(12,_6) + Indicator_(12,_7) + Indicator_(12,_8)
+ + Indicator_(12,_9) <= 1
+_C122: Indicator_(13,_0) + Indicator_(13,_1) + Indicator_(13,_10)
+ + Indicator_(13,_11) + Indicator_(13,_12) + Indicator_(13,_13)
+ + Indicator_(13,_14) + Indicator_(13,_2) + Indicator_(13,_3)
+ + Indicator_(13,_4) + Indicator_(13,_5) + Indicator_(13,_6)
+ + Indicator_(13,_7) + Indicator_(13,_8) + Indicator_(13,_9) <= 1
+_C13: 3 Indicator_(12,_0) + 2 Indicator_(12,_1) + 2 Indicator_(12,_2)
+ + 2 Indicator_(12,_3) + 2 Indicator_(2,_0) + 2 Indicator_(2,_1) <= 5
+_C14: 2 Indicator_(12,_0) + 3 Indicator_(12,_1) + 2 Indicator_(12,_2)
+ + 2 Indicator_(12,_3) + 2 Indicator_(2,_2) <= 1
+_C15: 3 Indicator_(2,_3) + 2 Indicator_(2,_4) + 2 Indicator_(2,_5) <= 2
+_C16: 3 Indicator_(4,_1) + 3 Indicator_(4,_2) <= 2
+_C17: 2 Indicator_(4,_0) <= 3
+_C18: 3 Indicator_(4,_3) + 3 Indicator_(4,_4) + 4 Indicator_(4,_5) <= 1
+_C19: Indicator_(13,_10) + Indicator_(13,_11) + Indicator_(13,_12)
+ + Indicator_(13,_13) + Indicator_(13,_14) + 2 Indicator_(13,_9)
+ + 3 Indicator_(3,_10) + 2 Indicator_(3,_7) + 2 Indicator_(3,_8)
+ + 2 Indicator_(3,_9) <= 2
+_C2: Indicator_(1,_2) + Indicator_(10,_5) + 2 Indicator_(10,_6)
+ + Indicator_(10,_7) <= 1
+_C20: 2 Indicator_(13,_0) + Indicator_(13,_1) + Indicator_(13,_2)
+ + Indicator_(13,_3) + Indicator_(13,_4) + 2 Indicator_(3,_0)
+ + 2 Indicator_(3,_1) <= 5
+_C21: 2 Indicator_(13,_5) + Indicator_(13,_6) + Indicator_(13,_7)
+ + Indicator_(13,_8) + 2 Indicator_(3,_2) + 2 Indicator_(3,_3)
+ + 2 Indicator_(3,_4) + 2 Indicator_(3,_5) + 3 Indicator_(3,_6) <= 2
+_C22: 2 Indicator_(3,_0) + 2 Indicator_(3,_1) <= 1
+_C23: 3 Indicator_(3,_2) + 2 Indicator_(3,_3) + 2 Indicator_(3,_4)
+ + 2 Indicator_(3,_5) + 2 Indicator_(3,_6) <= 4
+_C24: 2 Indicator_(3,_10) + 3 Indicator_(3,_7) + 2 Indicator_(3,_8)
+ + 2 Indicator_(3,_9) <= 4
+_C25: 2 Indicator_(2,_3) + 2 Indicator_(2,_4) + 3 Indicator_(2,_5) <= 2
+_C26: 2 Indicator_(5,_0) + 2 Indicator_(5,_1) + 2 Indicator_(6,_6) <= 1
+_C27: 2 Indicator_(2,_3) + 2 Indicator_(2,_4) + 2 Indicator_(2,_5)
+ + 2 Indicator_(5,_2) + 2 Indicator_(5,_3) + Indicator_(5,_4)
+ + 2 Indicator_(5,_5) + 2 Indicator_(6,_6) <= 4
+_C28: 2 Indicator_(6,_6) <= 4
+_C29: 2 Indicator_(6,_0) + 2 Indicator_(6,_1) + 2 Indicator_(6,_2)
+ + 2 Indicator_(6,_3) + 3 Indicator_(6,_4) + 2 Indicator_(6,_5) <= 2
+_C3: 2 Indicator_(1,_2) <= 3
+_C30: 2 Indicator_(11,_4) + 2 Indicator_(11,_5) <= 2
+_C31: 2 Indicator_(5,_2) + Indicator_(5,_3) + 2 Indicator_(8,_2)
+ + Indicator_(8,_3) + Indicator_(8,_4) <= 2
+_C32: 2 Indicator_(5,_0) + Indicator_(5,_1) + 2 Indicator_(8,_0)
+ + Indicator_(8,_1) <= 5
+_C33: 3 Indicator_(5,_4) + 2 Indicator_(5,_5) + 3 Indicator_(8,_5)
+ + 2 Indicator_(8,_6) + 2 Indicator_(8,_7) <= 5
+_C34: 3 Indicator_(9,_3) + 2 Indicator_(9,_4) + 2 Indicator_(9,_5)
+ + 2 Indicator_(9,_6) + 2 Indicator_(9,_7) + 2 Indicator_(9,_8)
+ + 2 Indicator_(9,_9) <= 2
+_C35: 2 Indicator_(9,_2) <= 3
+_C36: 3 Indicator_(9,_0) + 2 Indicator_(9,_1) <= 5
+_C37: Indicator_(9,_0) + 2 Indicator_(9,_1) + 2 Indicator_(9,_3)
+ + 2 Indicator_(9,_4) + 2 Indicator_(9,_5) + 2 Indicator_(9,_6)
+ + 2 Indicator_(9,_7) + 2 Indicator_(9,_8) + 3 Indicator_(9,_9) <= 5
+_C38: 2 Indicator_(9,_2) <= 1
+_C39: Indicator_(0,_0) + Indicator_(0,_1) + 2 Indicator_(0,_10)
+ + 2 Indicator_(0,_2) + Indicator_(0,_3) + Indicator_(0,_4) + Indicator_(0,_5)
+ + 2 Indicator_(0,_6) + Indicator_(0,_7) + Indicator_(0,_8) + Indicator_(0,_9)
+ <= 3
+_C4: 2 Indicator_(10,_5) + 2 Indicator_(10,_6) + 2 Indicator_(10,_7)
+ + 2 Indicator_(11,_0) + Indicator_(11,_1) + 2 Indicator_(11,_2)
+ + 2 Indicator_(11,_3) <= 1
+_C40: 3 Indicator_(4,_1) + 2 Indicator_(4,_2) <= 5
+_C41: 4 Indicator_(4,_3) + 3 Indicator_(4,_4) + 3 Indicator_(4,_5) <= 5
+_C42: Indicator_(13,_10) + Indicator_(13,_11) + 2 Indicator_(13,_12)
+ + Indicator_(13,_13) + Indicator_(13,_14) + Indicator_(13,_9) <= 3
+_C43: Indicator_(13,_10) + 2 Indicator_(13,_11) + Indicator_(13,_12)
+ + Indicator_(13,_13) + Indicator_(13,_14) + Indicator_(13,_9) <= 1
+_C44: 2 Indicator_(12,_7) + 2 Indicator_(12,_8) + 2 Indicator_(12,_9)
+ + 2 Indicator_(2,_0) + 3 Indicator_(2,_1) <= 4
+_C45: 2 Indicator_(12,_7) + 2 Indicator_(12,_8) + 2 Indicator_(12,_9)
+ + 2 Indicator_(2,_0) + Indicator_(2,_1) <= 1
+_C46: Indicator_(2,_3) + 2 Indicator_(2,_4) + Indicator_(2,_5) <= 4
+_C47: 2 Indicator_(4,_1) + 3 Indicator_(4,_2) + 2 Indicator_(8,_0)
+ + 2 Indicator_(8,_1) + 2 Indicator_(8,_2) + 2 Indicator_(8,_3)
+ + 3 Indicator_(8,_4) + 2 Indicator_(8,_5) + 2 Indicator_(8,_6)
+ + 3 Indicator_(8,_7) <= 1
+_C48: 2 Indicator_(1,_0) + 2 Indicator_(1,_1) + 2 Indicator_(7,_0)
+ + 2 Indicator_(7,_1) + 3 Indicator_(7,_2) <= 2
+_C49: 2 Indicator_(10,_0) + 2 Indicator_(10,_5) + 2 Indicator_(10,_6)
+ + 3 Indicator_(10,_7) <= 4
+_C5: 2 Indicator_(4,_0) <= 4
+_C50: 2 Indicator_(1,_3) + 2 Indicator_(1,_4) <= 2
+_C51: Indicator_(10,_0) <= 4
+_C52: Indicator_(7,_3) + Indicator_(7,_4) + 2 Indicator_(7,_5)
+ + Indicator_(7,_6) + 2 Indicator_(7,_7) <= 2
+_C53: Indicator_(5,_0) + 2 Indicator_(5,_1) <= 3
+_C54: Indicator_(11,_4) + 2 Indicator_(11,_5) + Indicator_(5,_2)
+ + 2 Indicator_(5,_3) + Indicator_(8,_2) + 2 Indicator_(8,_3)
+ + Indicator_(8,_4) <= 4
+_C55: 2 Indicator_(11,_4) + Indicator_(11,_5) <= 2
+_C56: Indicator_(13,_0) + Indicator_(13,_1) + 2 Indicator_(13,_10)
+ + 2 Indicator_(13,_11) + 2 Indicator_(13,_12) + 2 Indicator_(13,_13)
+ + 3 Indicator_(13,_14) + Indicator_(13,_2) + Indicator_(13,_3)
+ + 2 Indicator_(13,_4) + Indicator_(13,_5) + Indicator_(13,_6)
+ + Indicator_(13,_7) + 2 Indicator_(13,_8) + 2 Indicator_(13,_9) <= 5
+_C57: 2 Indicator_(7,_0) + Indicator_(7,_1) + Indicator_(7,_2) <= 2
+_C58: 2 Indicator_(7,_6) + 2 Indicator_(7,_7) <= 2
+_C59: 2 Indicator_(7,_3) + Indicator_(7,_4) + Indicator_(7,_5) <= 2
+_C6: 2 Indicator_(0,_10) + 3 Indicator_(0,_7) + 2 Indicator_(0,_8)
+ + 2 Indicator_(0,_9) <= 5
+_C60: 2 Indicator_(6,_5) <= 2
+_C61: 2 Indicator_(6,_5) <= 5
+_C62: 2 Indicator_(4,_1) + 2 Indicator_(4,_2) <= 2
+_C63: Indicator_(0,_10) + Indicator_(0,_7) + 2 Indicator_(0,_8)
+ + Indicator_(0,_9) <= 2
+_C64: 2 Indicator_(11,_0) + 2 Indicator_(11,_1) <= 4
+_C65: 2 Indicator_(11,_2) + 2 Indicator_(11,_3) + 2 Indicator_(6,_6) <= 4
+_C66: 2 Indicator_(11,_4) + 2 Indicator_(11,_5) + 3 Indicator_(6,_0)
+ + 2 Indicator_(6,_1) + 2 Indicator_(6,_2) + 2 Indicator_(6,_3)
+ + 2 Indicator_(6,_4) <= 5
+_C67: 2 Indicator_(8,_0) + 2 Indicator_(8,_1) <= 1
+_C68: 3 Indicator_(10,_1) + 2 Indicator_(10,_2) + 2 Indicator_(10,_3)
+ + 2 Indicator_(10,_4) <= 1
+_C69: 2 Indicator_(10,_5) + Indicator_(10,_6) + Indicator_(10,_7)
+ + Indicator_(11,_2) + 2 Indicator_(11,_3) + 2 Indicator_(5,_2)
+ + 2 Indicator_(5,_3) + 2 Indicator_(8,_2) + 2 Indicator_(8,_3)
+ + 2 Indicator_(8,_4) <= 1
+_C7: 3 Indicator_(0,_0) + 2 Indicator_(0,_1) + 2 Indicator_(0,_2)
+ + Indicator_(13,_5) + Indicator_(13,_6) + 2 Indicator_(13,_7)
+ + Indicator_(13,_8) <= 2
+_C70: 2 Indicator_(11,_2) + Indicator_(11,_3) + 2 Indicator_(12,_7)
+ + Indicator_(12,_8) + Indicator_(12,_9) + 2 Indicator_(2,_2)
+ + 2 Indicator_(2,_3) + 2 Indicator_(2,_4) + 2 Indicator_(2,_5)
+ + 2 Indicator_(3,_0) + Indicator_(3,_1) + 2 Indicator_(5,_2)
+ + 2 Indicator_(5,_3) + 2 Indicator_(5,_4) + 2 Indicator_(5,_5)
+ + Indicator_(8,_0) + 2 Indicator_(8,_1) + 2 Indicator_(8,_2)
+ + 2 Indicator_(8,_3) + 2 Indicator_(8,_4) + Indicator_(8,_5)
+ + 2 Indicator_(8,_6) + Indicator_(8,_7) <= 4
+_C71: 2 Indicator_(10,_0) + 2 Indicator_(5,_4) + 2 Indicator_(5,_5)
+ + 2 Indicator_(8,_5) + 2 Indicator_(8,_6) + 2 Indicator_(8,_7) <= 2
+_C72: 3 Indicator_(12,_4) + 2 Indicator_(12,_5) + 2 Indicator_(12,_6) <= 3
+_C73: Indicator_(7,_0) + 2 Indicator_(7,_1) + Indicator_(7,_2)
+ + Indicator_(9,_3) + Indicator_(9,_4) + Indicator_(9,_5) + Indicator_(9,_6)
+ + 2 Indicator_(9,_7) + Indicator_(9,_8) + Indicator_(9,_9) <= 4
+_C74: Indicator_(9,_3) + Indicator_(9,_4) + Indicator_(9,_5)
+ + Indicator_(9,_6) + Indicator_(9,_7) + 2 Indicator_(9,_8) + Indicator_(9,_9)
+ <= 1
+_C75: 2 Indicator_(5,_0) + 2 Indicator_(5,_1) + 2 Indicator_(8,_0)
+ + 2 Indicator_(8,_1) <= 2
+_C76: 2 Indicator_(13,_10) + Indicator_(13,_11) + Indicator_(13,_12)
+ + Indicator_(13,_13) + Indicator_(13,_14) + Indicator_(13,_9)
+ + 2 Indicator_(3,_10) + 2 Indicator_(3,_7) + 2 Indicator_(3,_8)
+ + 3 Indicator_(3,_9) <= 4
+_C77: 3 Indicator_(4,_3) + 4 Indicator_(4,_4) + 3 Indicator_(4,_5) <= 5
+_C78: 2 Indicator_(1,_2) <= 5
+_C79: 2 Indicator_(11,_0) + 2 Indicator_(11,_1) <= 5
+_C8: 2 Indicator_(0,_3) + Indicator_(0,_4) + Indicator_(0,_5)
+ + Indicator_(0,_6) + Indicator_(12,_0) + Indicator_(12,_1)
+ + Indicator_(12,_2) + 2 Indicator_(12,_3) + Indicator_(12,_4)
+ + Indicator_(12,_5) + 2 Indicator_(12,_6) + Indicator_(12,_7)
+ + Indicator_(12,_8) + 2 Indicator_(12,_9) <= 1
+_C80: 2 Indicator_(0,_3) + 2 Indicator_(0,_4) + 2 Indicator_(0,_5)
+ + 2 Indicator_(0,_6) <= 4
+_C81: 2 Indicator_(0,_3) + 2 Indicator_(0,_4) + 3 Indicator_(0,_5)
+ + 2 Indicator_(0,_6) <= 1
+_C82: Indicator_(10,_1) + 2 Indicator_(10,_2) + Indicator_(10,_3)
+ + Indicator_(10,_4) <= 4
+_C83: Indicator_(1,_0) + 2 Indicator_(1,_1) + 2 Indicator_(9,_3)
+ + 2 Indicator_(9,_4) + 2 Indicator_(9,_5) + 3 Indicator_(9,_6)
+ + 2 Indicator_(9,_7) + 2 Indicator_(9,_8) + 2 Indicator_(9,_9) <= 2
+_C84: Indicator_(13,_0) + Indicator_(13,_1) + Indicator_(13,_10)
+ + Indicator_(13,_11) + Indicator_(13,_12) + 2 Indicator_(13,_13)
+ + Indicator_(13,_14) + Indicator_(13,_2) + 2 Indicator_(13,_3)
+ + Indicator_(13,_4) + Indicator_(13,_9) <= 2
+_C85: Indicator_(0,_0) + 2 Indicator_(0,_1) + Indicator_(0,_2) <= 5
+_C86: Indicator_(13,_0) + 2 Indicator_(13,_1) + Indicator_(13,_2)
+ + Indicator_(13,_3) + Indicator_(13,_4) <= 1
+_C87: Indicator_(13,_0) + Indicator_(13,_1) + 2 Indicator_(13,_2)
+ + Indicator_(13,_3) + Indicator_(13,_4) <= 1
+_C88: 2 Indicator_(9,_2) <= 2
+_C89: 2 Indicator_(10,_1) + 2 Indicator_(10,_2) + 2 Indicator_(10,_3)
+ + 3 Indicator_(10,_4) <= 1
+_C9: Indicator_(13,_5) + 2 Indicator_(13,_6) + Indicator_(13,_7)
+ + Indicator_(13,_8) + 2 Indicator_(4,_0) <= 3
+_C90: 2 Indicator_(3,_0) + 2 Indicator_(3,_1) <= 1
+_C91: 2 Indicator_(1,_3) + 3 Indicator_(1,_4) <= 2
+_C92: 2 Indicator_(5,_2) + 2 Indicator_(5,_3) + 2 Indicator_(8,_2)
+ + 2 Indicator_(8,_3) + 2 Indicator_(8,_4) <= 3
+_C93: Indicator_(12,_0) + Indicator_(12,_1) + 2 Indicator_(12,_2)
+ + Indicator_(12,_3) + 2 Indicator_(2,_2) <= 2
+_C94: Indicator_(0,_3) + 2 Indicator_(0,_4) + Indicator_(0,_5)
+ + Indicator_(0,_6) + Indicator_(11,_2) + Indicator_(11,_3)
+ + Indicator_(12,_7) + 2 Indicator_(12,_8) + Indicator_(12,_9)
+ + Indicator_(2,_2) + Indicator_(3,_0) + 2 Indicator_(3,_1) + Indicator_(6,_6)
+ <= 2
+_C95: 2 Indicator_(12,_4) + 3 Indicator_(12,_5) + 2 Indicator_(12,_6) <= 3
+_C96: Indicator_(10,_1) + Indicator_(10,_2) + 2 Indicator_(10,_3)
+ + Indicator_(10,_4) + 2 Indicator_(7,_6) + 2 Indicator_(7,_7) <= 2
+_C97: 2 Indicator_(7,_3) + 3 Indicator_(7,_4) + 2 Indicator_(7,_5) <= 5
+_C98: 2 Indicator_(3,_2) + 3 Indicator_(3,_3) + 2 Indicator_(3,_4)
+ + 2 Indicator_(3,_5) + 2 Indicator_(3,_6) <= 4
+_C99: 2 Indicator_(7,_3) + 2 Indicator_(7,_4) + 2 Indicator_(7,_5)
+ + 2 Indicator_(7,_6) + Indicator_(7,_7) <= 1
+Bounds
+Indicator_(0,_0) <= 1
+Indicator_(0,_1) <= 1
+Indicator_(0,_10) <= 1
+Indicator_(0,_2) <= 1
+Indicator_(0,_3) <= 1
+Indicator_(0,_4) <= 1
+Indicator_(0,_5) <= 1
+Indicator_(0,_6) <= 1
+Indicator_(0,_7) <= 1
+Indicator_(0,_8) <= 1
+Indicator_(0,_9) <= 1
+Indicator_(1,_0) <= 1
+Indicator_(1,_1) <= 1
+Indicator_(1,_2) <= 1
+Indicator_(1,_3) <= 1
+Indicator_(1,_4) <= 1
+Indicator_(10,_0) <= 1
+Indicator_(10,_1) <= 1
+Indicator_(10,_2) <= 1
+Indicator_(10,_3) <= 1
+Indicator_(10,_4) <= 1
+Indicator_(10,_5) <= 1
+Indicator_(10,_6) <= 1
+Indicator_(10,_7) <= 1
+Indicator_(11,_0) <= 1
+Indicator_(11,_1) <= 1
+Indicator_(11,_2) <= 1
+Indicator_(11,_3) <= 1
+Indicator_(11,_4) <= 1
+Indicator_(11,_5) <= 1
+Indicator_(12,_0) <= 1
+Indicator_(12,_1) <= 1
+Indicator_(12,_2) <= 1
+Indicator_(12,_3) <= 1
+Indicator_(12,_4) <= 1
+Indicator_(12,_5) <= 1
+Indicator_(12,_6) <= 1
+Indicator_(12,_7) <= 1
+Indicator_(12,_8) <= 1
+Indicator_(12,_9) <= 1
+Indicator_(13,_0) <= 1
+Indicator_(13,_1) <= 1
+Indicator_(13,_10) <= 1
+Indicator_(13,_11) <= 1
+Indicator_(13,_12) <= 1
+Indicator_(13,_13) <= 1
+Indicator_(13,_14) <= 1
+Indicator_(13,_2) <= 1
+Indicator_(13,_3) <= 1
+Indicator_(13,_4) <= 1
+Indicator_(13,_5) <= 1
+Indicator_(13,_6) <= 1
+Indicator_(13,_7) <= 1
+Indicator_(13,_8) <= 1
+Indicator_(13,_9) <= 1
+Indicator_(2,_0) <= 1
+Indicator_(2,_1) <= 1
+Indicator_(2,_2) <= 1
+Indicator_(2,_3) <= 1
+Indicator_(2,_4) <= 1
+Indicator_(2,_5) <= 1
+Indicator_(3,_0) <= 1
+Indicator_(3,_1) <= 1
+Indicator_(3,_10) <= 1
+Indicator_(3,_2) <= 1
+Indicator_(3,_3) <= 1
+Indicator_(3,_4) <= 1
+Indicator_(3,_5) <= 1
+Indicator_(3,_6) <= 1
+Indicator_(3,_7) <= 1
+Indicator_(3,_8) <= 1
+Indicator_(3,_9) <= 1
+Indicator_(4,_0) <= 1
+Indicator_(4,_1) <= 1
+Indicator_(4,_2) <= 1
+Indicator_(4,_3) <= 1
+Indicator_(4,_4) <= 1
+Indicator_(4,_5) <= 1
+Indicator_(5,_0) <= 1
+Indicator_(5,_1) <= 1
+Indicator_(5,_2) <= 1
+Indicator_(5,_3) <= 1
+Indicator_(5,_4) <= 1
+Indicator_(5,_5) <= 1
+Indicator_(6,_0) <= 1
+Indicator_(6,_1) <= 1
+Indicator_(6,_2) <= 1
+Indicator_(6,_3) <= 1
+Indicator_(6,_4) <= 1
+Indicator_(6,_5) <= 1
+Indicator_(6,_6) <= 1
+Indicator_(7,_0) <= 1
+Indicator_(7,_1) <= 1
+Indicator_(7,_2) <= 1
+Indicator_(7,_3) <= 1
+Indicator_(7,_4) <= 1
+Indicator_(7,_5) <= 1
+Indicator_(7,_6) <= 1
+Indicator_(7,_7) <= 1
+Indicator_(8,_0) <= 1
+Indicator_(8,_1) <= 1
+Indicator_(8,_2) <= 1
+Indicator_(8,_3) <= 1
+Indicator_(8,_4) <= 1
+Indicator_(8,_5) <= 1
+Indicator_(8,_6) <= 1
+Indicator_(8,_7) <= 1
+Indicator_(9,_0) <= 1
+Indicator_(9,_1) <= 1
+Indicator_(9,_2) <= 1
+Indicator_(9,_3) <= 1
+Indicator_(9,_4) <= 1
+Indicator_(9,_5) <= 1
+Indicator_(9,_6) <= 1
+Indicator_(9,_7) <= 1
+Indicator_(9,_8) <= 1
+Indicator_(9,_9) <= 1
+End

@@ -1,0 +1,104 @@
+\documentclass[border=5mm]{standalone}
+\usepackage{pgfplots}
+\definecolor{mypink}{RGB}{203, 154, 46}
+\definecolor{mypink1}{RGB}{138, 39, 41}
+\definecolor{mypink2}{RGB}{89, 154, 73}
+\definecolor{mypink3}{RGB}{114, 116, 197}
+\definecolor{mypink4}{RGB}{255 0 0}
+\definecolor{mypink5}{RGB}{0 0 255}
+\begin{document}
+
+
+\begin{tikzpicture}
+\begin{axis}[
+    %title={Surfnet Topology},
+    xlabel={\large{Edge capacity}},
+    ylabel={\large{Number of met requests}},
+    %legend entries={Opt$\_$MCLP$(\alpha=1)$, Opt$\_$MCLP$(\alpha=10)$, Opt$\_$MCLP$(\alpha=100)$},
+    legend entries={$\alpha=0.04$,$\alpha=0.05$,$\alpha=0.06$,$\alpha=0.07$},
+    xmin=3,
+    ymin=18,
+    xmax=8,
+    ymax=30,
+    xtick={3,4,5,6,7,8},
+    %ytick={0,20,40,60,80,100,120},
+    legend pos=south east, %outer north east, north west, north east, south west, south east
+    ymajorgrids=true,
+    grid style=dashed, %solid, (densely, loosely) dotted, (densely, loosely) dashed, (densely, loosely) dashdotted, (densely, loosely) dashdotdotted, {color=blue, thick}
+    legend style={cells={anchor=west}},%align text left
+    legend style={font=\large},
+    % legend style={draw=none}, without legend box
+    % legend style={legend columns=-1}, draw legend horizontally
+    % legend style={at={(1,0.5)}, anchor=east},
+     line width=1.5pt,
+     mark size=4pt,
+]
+
+% none
+% +, *, o, triangle, cube(square), star, diamond, otimes, pentagon, |, halfcircle, ball
+% triangle*, cube*, diamond*, square*, halfcircle*, halfsquare* (halfdiamond*), pentagon*, halfsquare right*, halfsquare left*
+
+% red, green, blue, cyan, magenta, yellow, black,
+% gray, white, darkgray, lightgray, brown, lime,
+% olive, orange, pink, purple, teal, violet.
+% red!30!white implies that 30% of red and 70% of white
+% rgb,255:red,231;green,84;blue,121 implies that 231/255 red, 84/255 green, and 121/255
+
+%solid, (densely, loosely) dotted, (densely, loosely) dashed, (densely, loosely) dashdotted, (densely, loosely) dashdotdotted
+
+\addplot[
+    %color=red,
+    color=mypink,
+    densely dotted,
+    mark=diamond,
+    mark options={solid},
+] table {agg_0.04.txt};
+
+\addplot[
+	%color=blue,
+	color=mypink1,
+	dashdotdotted,
+	mark=triangle,
+	mark options={solid},
+] table {agg_0.05.txt};
+
+\addplot[
+	%color=magenta,
+	color=mypink2,
+	densely dashed,
+	mark=star,
+	mark options={solid},
+] table {agg_0.06.txt};
+
+\addplot[
+    %color=teal,
+    color=mypink3,
+    dashdotted,
+    mark=pentagon,
+    mark options={solid},
+] table {agg_0.07.txt};
+
+%\addplot[
+%color=teal,
+%	color=mypink4,
+%	loosely dotted,
+%	mark=diamond,
+%	mark options={solid},
+%] table {agg_0.07.txt};
+
+%\addplot[
+%color=teal,
+%	color=mypink5,
+%	loosely dashed,
+%	mark=diamond,
+%	mark options={solid},
+%] table {agg_0.08.txt};
+
+\end{axis}
+\end{tikzpicture}
+
+
+
+
+
+\end{document} 
